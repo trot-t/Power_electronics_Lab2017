@@ -15,15 +15,15 @@
 \usepackage[american,cuteinductors,smartlabels]{circuitikz}
 
 \usepackage{advdate}
-%\usepackage{showframe}
+\usepackage{showframe}
 
-%\setlength{\voffset}{-72pt} %отступ сверху - чтобы увидеть откомментарить \usepackage{showframe}
-\setlength{\voffset}{-36pt}
-% \setlength{\footskip}{-20pt}
+\setlength{\voffset}{-72pt} %отступ сверху - чтобы увидеть откомментарить \usepackage{showframe}
+%\setlength{\voffset}{-36pt}
+ \setlength{\footskip}{-20pt}
  \setlength{\topmargin}{0pt} 
 % %\setlength{\headheight{1pt}
  \setlength{\headsep}{0pt}
-% \setlength{\hoffset}{-72pt}
+\setlength{\hoffset}{-72pt}
 \setlength{\marginparwidth}{0pt}
 \setlength{\textwidth}{530pt}
 \setlength{\textheight}{808pt} 
@@ -42,7 +42,7 @@
 %\thispagestyle{empty}
 % or
 \pagenumbering{gobble}
-%\AdvanceDate[-1] % печатаю в пятницу а нужна суббота
+\AdvanceDate[1] % печатаю в пятницу а нужна суббота
 \begin{center}\today\end{center}
 \vspace*{1\baselineskip}
 %\newcommand{\la1}{\textcyrillic{лаб.1(СИФУ)}}
@@ -51,10 +51,10 @@
 %\section{}
 %\begin{table} \centering
 %\begin{tabular}{@{} cl*{10}c|}% @{}}
-\begin{tabular}{clccccccc p{.4cm}|p{.4cm}|p{.4cm}|p{.4cm}|p{.4cm}}% @{}}
-  \multicolumn{14}{c}{График выполнения лабораторных работ студентами 4405 группы} \\
+\begin{tabular}{clcccccccc p{.4cm}|p{.4cm}|p{.4cm}|p{.4cm}|p{.4cm}}% @{}}
+  \multicolumn{15}{c}{График выполнения лабораторных работ студентами 4405 группы} \\
 \toprule
-	& & & & & & & &%\rotatebox{90}{2 апреля}
+	& & & & & & & & &%\rotatebox{90}{2 апреля}
 %& %\rotatebox{90}{9 апреля} 
 %& %\rotatebox{90}{16 апреля} 
 %& %\rotatebox{90}{23 апреля} 
@@ -66,72 +66,71 @@
 %& %\rotatebox{90}{3 июня}
 %& %\rotatebox{90}{4 июня}
 &\multicolumn{4}{c}{{\shortstack[c]{\\защита\\ лабораторных\\работ}}} \\
-\cmidrule{10-14}
+\cmidrule{11-15}
 && \rotatebox{90}{\rlap{1 апреля}}
 & \rotatebox{90}{\rlap{8 апреля}}
 & \rotatebox{90}{\rlap{15 апреля}}
 & \rotatebox{90}{\rlap{22 апреля}}
 & \rotatebox{90}{\rlap{29 апреля}}
 & \rotatebox{90}{\rlap{6 мая}}
-& \rotatebox{90}{\rlap{13 мая}}
-%& \rotatebox{90}{\rlap{14 мая}}
-%& \rotatebox{90}{\rlap{21 мая}}
+& \rotatebox{90}{\rlap{13 мая}} 
+& \rotatebox{90}{\rlap{20 мая}}
 %\rotatebox{90}{\rlap{\shortstack[c]{зачетная\\ неделя}}}
 %& \rotatebox{90}{\rlap{3 июня 17:00}}
 %& \rotatebox{90}{\rlap{4 июня 9:50}} 
 	&\rotatebox{60}{№1}&\rotatebox{60}{№2}&\rotatebox{60}{№3}&\rotatebox{60}{№4}&\rotatebox{60}{№5} \\
 \midrule
 	&&\rotatebox{90}{лаб.3} & & \rotatebox{90}{лаб.5} & & \rotatebox{90}{лаб.4} &
-& \rotatebox{90}{лаб.1}\\
-	&Халявин Дмитрий	&\OK&&\OK& &\OK& & 		&&&?&\\
-	&Смирнов Никита		&\OK&&\OK& &\OK& &		&&&?&\\
+	& \rotatebox{90}{лаб.1} & \rotatebox{90}{лаб.2}\\
+	&Халявин Дмитрий	&\OK&&\OK& &\OK& &\OK& 		&&&?&\\
+	&Смирнов Никита		&\OK&&\OK& &\OK& &\OK&		&&&?&\\
 \rotatebox{90}{\rlap{~бригада №1}}       
-	&Юдин Алексей		&\OK&&\OK& &\OK& &		&&&?&\\
+	&Юдин Алексей		&\OK&&\OK& &\OK& &\OK&		&&&?&\\
  
-\cmidrule{1-12} 
+\cmidrule{1-15} 
 	& &\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.4} & & \rotatebox{90}{лaб.3} & &\rotatebox{90}{лаб.2}\\ 
  		
-	&Пермогорский Павел & \Skip &\OK&\OK& &\OK& &	&?&&&&\\	
-	&Трофимов Иван 	    & \Skip &\OK&\OK& &\Skip& &		&?&&&&\\
+	&Пермогорский Павел & \Skip &\OK&\OK& &\OK& &\OK&	&?&&&&\\	
+	&Трофимов Иван 	    & \Skip &\OK&\OK& &\Skip& &\Skip&		&?&&&&\\
 \rotatebox{90}{\rlap{~бригада №2}}
-	&Пестов Сергей	   &\OK&    & \Skip & &\OK& &		&\\
+	&Пестов Сергей	   &\OK&    & \Skip & &\OK& &\OK&	&\\
                               
-\cmidrule{1-12}
+\cmidrule{1-15}
 	&&\rotatebox{90}{лaб.2}& & \rotatebox{90}{лaб.1} & & \rotatebox{90}{лaб.5}
 & & \rotatebox{90}{лаб.4}\\
  		
-	& Мартыненко Дмитрий	&\OK& &\OK& &\OK& &		&&5-\\
-	& Банков Владислав	&\OK& &\OK& &\OK& &		&&5-\\
-	& Боцунов Александр	&\OK& &\OK& &\OK& &		&&5-\\
+	& Мартыненко Дмитрий	&\OK& &\OK& &\OK& &\OK& &		&&5-\\
+	& Банков Владислав	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
+	& Боцунов Александр	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
 \rotatebox{90}{\rlap{~бригада №3}}
-	& Елисеев Анатолий 	&\OK& &\OK& &\OK& &		&&5-\\
+	& Елисеев Анатолий 	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
  
-\cmidrule{1-12} 
-	& &&\rotatebox{90}{лaб.5} & &\rotatebox{90}{лaб.4}&&\rotatebox{90}{лaб.2}\\
+\cmidrule{1-15} 
+	& &&\rotatebox{90}{лaб.5} & &\rotatebox{90}{лaб.4}&&\rotatebox{90}{лaб.2}&&\rotatebox{90}{лaб.1}\\
  
-	& Шелемба Андрей    	& &\OK& &\OK & &\OK		&&&&?&3-\\
-        & Захаров Матвей    	& &\OK& &\OK & &\OK             &&&&?&3-\\
+	& Шелемба Андрей    	& &\OK& &\OK & &\OK & &	&&&&?&3-\\
+	& Захаров Матвей    	& &\OK& &\OK & &\OK & &          &&&&?&3-\\
 \rotatebox{90}{\rlap{~бригада №4}}
-	& Замалетдинов Илья 	& &\OK& &\OK & &\OK		&&&&?&3-\\
+	& Замалетдинов Илья 	& &\OK& &\OK & &\OK & &		&&&&?&3-\\
  
-\cmidrule{1-12}
-& &&\rotatebox{90}{лaб.2} &&\rotatebox{90}{лaб.1}&&\rotatebox{90}{лaб.4}\\
+\cmidrule{1-15}
+& &&\rotatebox{90}{лaб.2} &&\rotatebox{90}{лaб.1}&&\rotatebox{90}{лaб.4}&&\rotatebox{90}{лaб.5}\\
  
-& Косьянов Никита   		& &\OK& &\OK &	&\OK&		&3+&3-&&\\
-& Власенко Александр 		& &\OK& &\OK &	&\OK&		&3+&3-&&\\
-& Аганеев Владимир 		& &\OK& &\OK &	&\OK&	        &3+&3-&&\\
+& Косьянов Никита   		& &\OK& &\OK &	&\OK& &		&3+&3-&&\\
+& Власенко Александр 		& &\OK& &\OK &	&\OK& &		&3+&3-&&\\
+& Аганеев Владимир 		& &\OK& &\OK &	&\OK& &	        &3+&3-&&\\
  \rotatebox{90}{\rlap{~бригада №5}}
-& Данилович Павел 		& &\OK& &\OK &	&\OK&		&3+&3-&&\\
+& Данилович Павел 		& &\OK& &\OK &	&\OK& &		&3+&3-&&\\
  
-\cmidrule{1-12} 
+\cmidrule{1-15} 
 & &&\rotatebox{90}{лaб.3} &&\rotatebox{90}{лaб.2}&\rotatebox{90}{лaб.2}&
-\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.5}\\
+\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.5}&\rotatebox{90}{лaб.4}\\
  
-& Зудиков Анатолий 		& &\OK& &\OK &	&\OK& 		&&?&3-&&\\
-& Бажин Евгений    		& &\OK& &\OK &	&\OK& 		&&&3-&&\\
-& Голубев Максим   		& &\OK& &\Skip&\OK&\Skip&	&\\
+& Зудиков Анатолий 		& &\OK& &\OK &	&\OK&\OK & 		&&?&3-&&\\
+& Бажин Евгений    		& &\OK& &\OK &	&\OK&\OK& 		&&&3-&&\\
+& Голубев Максим   		& &\OK& &\Skip&\OK&\Skip& &	&\\
 \rotatebox{90}{\rlap{~бригада №6}}
-& Ряжапов Ильнур  		& &\OK& &\Skip&\OK&\Skip&	&\\
+& Ряжапов Ильнур  		& &\OK& &\Skip&\OK&\Skip&\OK&	&\\
 \bottomrule
 \end{tabular} 
 
@@ -152,6 +151,6 @@
 
 Агантеев - не знает как регистрируется ток утечки.
 
-
+Юдин -- объясняет измерение реактивной мощности.
 
 \end{document}
