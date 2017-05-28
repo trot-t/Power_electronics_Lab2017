@@ -42,9 +42,9 @@
 %\thispagestyle{empty}
 % or
 \pagenumbering{gobble}
-\AdvanceDate[1] % печатаю в пятницу а нужна суббота
+\AdvanceDate[-1] % печатаю в пятницу а нужна суббота
 \begin{center}\today\end{center}
-\vspace*{1\baselineskip}
+%\vspace*{1\baselineskip}
 %\newcommand{\la1}{\textcyrillic{лаб.1(СИФУ)}}
 %\maketitle
 %\skippage
@@ -82,11 +82,11 @@
 	&\rotatebox{60}{№1}&\rotatebox{60}{№2}&\rotatebox{60}{№3}&\rotatebox{60}{№4}&\rotatebox{60}{№5} \\
 \midrule
 	&&\rotatebox{90}{лаб.3} & & \rotatebox{90}{лаб.5} & & \rotatebox{90}{лаб.4} &
-	& \rotatebox{90}{лаб.1} & \rotatebox{90}{лаб.2}\\
-	&Халявин Дмитрий	&\OK&&\OK& &\OK& &\OK&\OK& 		&&&4&&\\
-	&Смирнов Никита		&\OK&&\OK& &\OK& &\OK&\OK&		&&&4&&\\
+	& \rotatebox{90}{лаб.1} & \\
+	&Халявин Дмитрий	&\OK&&\OK& &\OK& &\OK&\OK& 		&5&5&4+&&5-\\
+	&Смирнов Никита		&\OK&&\OK& &\OK& &\OK&\OK&\OK		&5&5&4+&&5-\\
 \rotatebox{90}{\rlap{~бригада №1}}       
-	&Юдин Алексей		&\OK&&\OK& &\OK& &\OK&\OK&		&&&4&&\\
+	&Юдин Алексей		&\OK&&\OK& &\OK& &\OK&\OK&\OK		&5&5&5-&&5-\\
  
 \cmidrule{1-16} 
 	& &\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.4} & & \rotatebox{90}{лaб.3} & &\rotatebox{90}{лаб.2}&
@@ -95,44 +95,47 @@
 	&Пермогорский Павел & \Skip &\OK&\OK& &\OK& &\OK&\Skip&	&?&&&&\\	
 	&Трофимов Иван 	    & \Skip &\OK&\OK& &\Skip& &\Skip&Л2&		&?&&&&\\
 \rotatebox{90}{\rlap{~бригада №2}}
-	&Пестов Сергей	   &\OK&    & \Skip & &\OK& &\OK&Л4&	&\\
+	&Пестов Сергей	   &\OK&    & \Skip & &\OK& &\OK&Л4&	&&&
+&\rotatebox{90}{\linespread{0.75}\hspace{-0.4cm}\tiny\begin{tabular}{l}списаны\\отчеты и\\протокол\end{tabular}}&\\
                               
 \cmidrule{1-16}
 	&&\rotatebox{90}{лaб.2}& & \rotatebox{90}{лaб.1} & & \rotatebox{90}{лaб.5}
 & & \rotatebox{90}{лаб.3}&&\rotatebox{90}{лаб.4}\\
  		
-	& Мартыненко Дмитрий	&\OK& &\OK& &\OK& &\OK& &		&&5-\\
-	& Банков Владислав	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
-	& Боцунов Александр	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
+	& Мартыненко Дмитрий	&\OK& &\OK& &\OK& &\OK& &	&5+&5&5&&4-\\
+	& Банков Владислав	&\OK& &\OK& &\OK& &\OK&	&	&5-&3&5&&4-\\
+	& Боцунов Александр	&\OK& &\OK& &\OK& &\OK&	&	&5-&3&5&&4-\\
 \rotatebox{90}{\rlap{~бригада №3}}
-	& Елисеев Анатолий 	&\OK& &\OK& &\OK& &\OK&	&	&&5-\\
+	& Елисеев Анатолий 	&\OK& &\OK& &\OK& &\OK&	&	&5-&3&5&&4-\\
  
 \cmidrule{1-16} 
 	& &&\rotatebox{90}{лaб.5} & &\rotatebox{90}{лaб.4}&&\rotatebox{90}{лaб.2}&&\rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.3}\\
  
-	& Шелемба Андрей    	& &\OK& &\OK & &\OK & &\OK&		&&&&5&3-\\
-	& Захаров Матвей    	& &\OK& &\OK & &\OK & &\OK&          	&&&&5&3-\\
+	& Шелемба Андрей    	& &\OK& &\OK & &\OK & &\OK&		&5&5&&5&3-\\
+	& Захаров Матвей    	& &\OK& &\OK & &\OK & &\OK&          	&5&5&&5&3-\\
 \rotatebox{90}{\rlap{~бригада №4}}
-	& Замалетдинов Илья 	& &\OK& &\OK & &\OK & &\OK&		&&&&5&3-\\
+	& Замалетдинов Илья 	& &\OK& &\OK & &\OK & &\OK&		&5&5&&5&3-\\
  
 \cmidrule{1-16}
 & &&\rotatebox{90}{лaб.2} &&\rotatebox{90}{лaб.1}&&\rotatebox{90}{лaб.4}&&\rotatebox{90}{лaб.5}\\
  
-& Косьянов Никита   		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&&\\
-& Власенко Александр 		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&&\\
-& Аганеев Владимир 		& &\OK& &\OK &	&\OK& &\OK&	        &3+&3-&&\\
+& Косьянов Никита   		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&&&5-\\
+& Власенко Александр 		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&&&5-\\
+& Аганеев Владимир 		& &\OK& &\OK &	&\OK& &\OK&	        &3+&3-&&&5-\\
  \rotatebox{90}{\rlap{~бригада №5}}
-& Данилович Павел 		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&&\\
+& Данилович Павел 		& &\OK& &\OK &	&\OK& &\OK&		&3+&3-&
+&\rotatebox{90}{\rlap{\linespread{0.6}\hspace{-0.4cm}\scriptsize\begin{tabular}{l}{поделились отчетами}\\и протоколом\end{tabular}}}&5-\\
  
 \cmidrule{1-16} 
 & &&\rotatebox{90}{лaб.3} &&\rotatebox{90}{лaб.2}&\rotatebox{90}{лaб.2}&
 \rotatebox{90}{лaб.1}&\rotatebox{90}{лaб.5}&\rotatebox{90}{лaб.4}&\rotatebox{90}{лaб.1}\\
  
-& Зудиков Анатолий 		& &\OK& &\OK &	&\OK&\OK &\OK& 		&4&3+&3-&&4\\
-& Бажин Евгений    		& &\OK& &\OK &	&\OK&\OK &\OK& 		&4&3-&3-&&4\\
-& Голубев Максим   		& &\OK& &\Skip&\OK&\Skip&&\OK&	&\\
+& Зудиков Анатолий 		& &\OK& &\OK &	&\OK&\OK &\OK& 		&4&3+&3&&4\\
+& Бажин Евгений    		& &\OK& &\OK &	&\OK&\OK &\OK& 		&4&3-&3&&4\\
+& Голубев Максим   		& &\OK& &\Skip&\OK&\Skip&&\OK&		&&&&&	\\
 \rotatebox{90}{\rlap{~бригада №6}}
-& Ряжапов Ильнур  		& &\OK& &\Skip&\OK&\Skip&\OK&\OK&	&\\
+& Ряжапов Ильнур  		& &\OK& &\Skip&\OK&\Skip&\OK&\OK&	&&&
+&\rotatebox{90}{\rlap{\linespread{0.6}\scriptsize\begin{tabular}{l}{списаны отчеты}\\и протокол\end{tabular}}}&\\
 \bottomrule
 \end{tabular} 
 
